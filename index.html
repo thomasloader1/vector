@@ -24,7 +24,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Vectorworks 2020 | Vectorworks Latinoamerica</title>
-    <!-- <link rel="icon" type="image/png" href="./img/svg/iconvw.png"> -->
+    <link rel="icon" type="image/png" href="./img/svg/iconvw.png">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -40,7 +40,7 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header>
-        <nav class="mb-1 sticky-top navbar navbar-expand-lg navbar-dark bg-dark p-3 z-depth-0">
+        <nav class="mb-1 sticky-top navbar navbar-expand-lg navbar-dark elegant-color-dark p-3 z-depth-0">
 
             <div class="container">
                 <a class="navbar-brand" href="#">
@@ -57,17 +57,56 @@
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link waves-effect waves-light text-uppercase" href="#">Settings</a>
+                        <li class="nav-item dropdown">
+                            <!-- Basic dropdown -->
+                            <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownProductosLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">productos</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownProductosLink">
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/designer/">Designer</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/fundamentals/">Fundamentals</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/architect/">Architect</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/landmark/">Landmark</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/spotlight/">Spotlight</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/vision/">Vision</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/braceworks/">Braceworks</a>
+                            </div>
+                            <!-- Basic dropdown -->
+                        </li>
+                        <li class="nav-item dropdown">
+                            <!-- Basic dropdown -->
+                            <a class="nav-link dropdown-toggle text-uppercase" id="navbarDropdownSolucionesLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Soluciones</a>
+                            <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownSolucionesLink">
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/architect/">Arquitectura</a>
+                                <a class="dropdown-item" href="https://www.vectorworks-la.com/landmark/">Paisajismo</a>
+                                <a class="dropdown-item nav-link dropdown-toggle text-dark " id="navbarDropdownEntretenimientoLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Entretenimiento</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownEntretenimientoLink">
+                                    <a class="dropdown-item" href="https://www.vectorworks-la.com/spotlight/">Spotlight</a>
+                                    <a class="dropdown-item" href="https://www.vectorworks-la.com/braceworks/">Braceworks</a>
+                                    <a class="dropdown-item" href="https://www.vectorworks-la.com/vision/">Vision</a>
+                                </div>
+                                <a class="dropdown-item nav-link dropdown-toggle text-dark" id="navbarDropdownObjetosLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Objetos</a>
+                                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownObjetosLink">
+                                    <a class="dropdown-item" href="https://www.vectorworks-la.com/fundamentals/">Fundamentals</a>
+                                    <a class="dropdown-item" href="https://www.vectorworks-la.com/designer/">All in One</a>
+
+                                </div>
+                            </div>
+                            <!-- Basic dropdown -->
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link waves-effect waves-light text-uppercase">Contacto</a>
+                            <!-- Button trigger modal -->
+                            <a class="nav-link waves-effect waves-light text-uppercase" data-toggle="modal" data-target="#contactoModal">Contacto</a>
+
+                        </li>
+                        <li class="nav-item ">
+                            <!-- Button trigger modal -->
+                            <a class="nav-link waves-effect waves-light text-uppercase" data-toggle="modal" data-target="#contactoModal">Student</a>
+
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link btn btn-sm btn-outline-white text-uppercase font-weight-bold px-3">Trial</a>
+                            <a data-toggle="modal" data-target="#trialModal" class="nav-link btn btn-sm btn-outline-white text-uppercase font-weight-bold px-3">Trial</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link btn btn-sm btn-outline-white text-uppercase font-weight-bold px-3">Comprar</a>
+                            <a data-toggle="modal" data-target="#contactoModal" class="nav-link btn btn-sm btn-outline-white text-uppercase font-weight-bold px-3">Comprar</a>
                         </li>
                     </ul>
                 </div>
@@ -188,7 +227,7 @@
 
 
             <!-- <section class="position-absolute section-absolute-three"> -->
-            <div class="white p-3">
+            <div class="white p-0">
                 <div class="container">
                     <div class="row">
                         <h2 class="text-center text-uppercase font-weight-bold py-5 mx-auto display-5">Nuevas soluciones para trabajar mas rapido y inteligente</h2>
@@ -200,14 +239,65 @@
                                 <button type="button" class="btn btn-elegant btn-lg" data-toggle="modal" data-target="#landmark-product">LANDMARK</button>
                                 <button type="button" class="btn btn-elegant btn-lg" data-toggle="modal" data-target="#fundamentals-product">FUNDAMENTALS</button>
                             </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-fluid bg-default mt-3 p-4 text-center">
+                    <p class="h1 white-text font-weight-bold text-shadow">Promoción pre-venta 2020 </p>
+                    <p class="lead white-text pt-2 text-shadow">Comprando la versión 2020 durante el mes de Noviembre 10% de descuento.</p>
+                    <p class="lead white-text text-shadow">Código: <strong class=" bg-dark p-2">AUFIEROPREVENTA20</strong></p>
+                    <a href="https://www.vectorworks-la.com/contacto/" class="btn btn-dark btn-lg mx-auto">COMPRAR AHORA</a>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="contactoModal" tabindex="-1" role="dialog" aria-labelledby="contactoLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Coloque sus datos y nos pondremos en contacto a la brevedad</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe title="Embedded Wufoo Form" height="829" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://paragonla.wufoo.com/embed/zj8t4ke1wik0u1/">
+                          <a href="https://paragonla.wufoo.com/forms/zj8t4ke1wik0u1/">
+                            Fill out my Wufoo form!
+                          </a>
+                        </iframe>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="trialModal" tabindex="-1" role="dialog" aria-labelledby="trialLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Complete los campos porfavor</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        </div>
+                        <div class="modal-body">
+                            <iframe title="Embedded Wufoo Form" height="512" allowTransparency="true" frameborder="0" scrolling="no" style="width:100%;border:none" src="https://paragonla.wufoo.com/embed/z1ippkgi0qaalmc/">
+                          <a href="https://paragonla.wufoo.com/forms/z1ippkgi0qaalmc/">
+                            Fill out my Wufoo form!
+                          </a>
+                        </iframe>
+
 
 
                         </div>
-
                     </div>
-
                 </div>
             </div>
+
+
+
             <!-- Modal -->
             <div class="modal fade" id="architect-product" tabindex="-1" role="dialog" aria-labelledby="architect-product-title" aria-hidden="true">
 
@@ -2017,6 +2107,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/js/mdb.min.js"></script>
+
     <script src="./js/nanobar.min.js"></script>
     <script src="./js/main.js"></script>
 </body>

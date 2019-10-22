@@ -105,6 +105,10 @@ h1 {
     width: 100%;
 }
 
+.text-shadow {
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.178);
+}
+
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575px) {
     .magic {
@@ -145,6 +149,9 @@ h1 {
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) and (max-width: 767px) {
+    body {
+        background: black;
+    }
     .magic {
         margin-bottom: 0px;
     }
@@ -189,7 +196,7 @@ h1 {
         position: absolute;
         top: -80px;
         width: 100%;
-        z-index: 1;
+        z-index: -1;
     }
     .magic {
         margin-bottom: 0px;
@@ -213,11 +220,6 @@ h1 {
         h2 {
             font-size: 1.5em;
         }
-    }
-    .section-absolute-three {
-        background: white;
-        padding-bottom: 10px;
-        top: 650px;
     }
     #section-four {
         display: block!important;
@@ -288,8 +290,8 @@ h1 {
     .section-absolute {
         top: -5px;
         h1 {
-            margin-top: 30px;
-            font-size: 3rem;
+            margin-top: 50px;
+            font-size: 6rem;
         }
         .responsive-svg {
             width: 100px;
@@ -297,9 +299,9 @@ h1 {
         }
     }
     .section-absolute-two {
-        top: 320px;
+        top: 550px;
         h2 {
-            font-size: 1.5em;
+            font-size: 3em;
         }
     }
     #section-four {
